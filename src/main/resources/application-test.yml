@@ -1,0 +1,17 @@
+spring:
+
+  datasource:
+    url: jdbc:h2:file:./relatorios-poc
+    username: sa
+    password:
+
+  h2:
+    console:
+      enabled: true
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  profiles:
+    active: test
