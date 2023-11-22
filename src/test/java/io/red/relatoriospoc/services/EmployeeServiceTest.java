@@ -1,6 +1,6 @@
 package io.red.relatoriospoc.services;
 
-import io.red.relatoriospoc.repositories.EmployeeRepository;
+import io.red.relatoriospoc.relatorios.repositories.EmployeeRepository;
 import io.red.relatoriospoc.utils.ReportImageUtil;
 import jakarta.servlet.ServletOutputStream;
 import jakarta.servlet.http.HttpServletResponse;

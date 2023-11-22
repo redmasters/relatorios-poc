@@ -1,4 +1,4 @@
-package io.red.relatoriospoc.repositories;
+package io.red.relatoriospoc.relatorios.repositories;
 
 import io.red.relatoriospoc.model.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;

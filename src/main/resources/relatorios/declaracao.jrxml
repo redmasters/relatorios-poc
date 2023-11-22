@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="declaracao" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0055cc54-2716-4353-9a9e-21634713f6de">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="OneEmptyRecord"/>
+	<parameter name="logo" class="java.awt.image.BufferedImage"/>
+	<parameter name="footer" class="java.awt.image.BufferedImage"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="id" class="java.lang.Long"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="114" splitType="Stretch">
+			<rectangle>
+				<reportElement x="-20" y="0" width="595" height="114" backcolor="#130D30" uuid="77ee4669-4734-48df-8ede-fa0b2f7d3673"/>
+			</rectangle>
+			<image>
+				<reportElement x="250" y="14" width="50" height="50" uuid="985729ac-819e-4595-a27b-57e551bb82f5"/>
+				<imageExpression><![CDATA[$P{logo}]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="230" y="40" width="100" height="30" uuid="a701204e-4bee-4513-b941-81e25d2a6802"/>
+				<textFieldExpression><![CDATA["Hero id:" + $F{id}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="83" splitType="Stretch">
+			<image>
+				<reportElement x="252" y="16" width="50" height="50" uuid="4a9d2b46-4aaf-4fe7-bddc-1f82fe246a35"/>
+				<imageExpression><![CDATA[$P{footer}]]></imageExpression>
+			</image>
+		</band>
+	</pageFooter>
+</jasperReport>

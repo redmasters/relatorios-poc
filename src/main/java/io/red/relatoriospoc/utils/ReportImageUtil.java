@@ -11,7 +11,7 @@ import java.io.IOException;
 @Component
 public class ReportImageUtil {
     private static final Logger logger = LoggerFactory.getLogger(ReportImageUtil.class);
-    public BufferedImage getBufferedImage(String path) throws IOException {
+    public static BufferedImage getBufferedImage(String path) throws IOException {
         var classLoader = Thread.currentThread().getContextClassLoader();
         var iconStream = classLoader.getResourceAsStream(path);
         if(iconStream == null) {

@@ -1,8 +1,7 @@
 package io.red.relatoriospoc.services;
 
 import io.red.relatoriospoc.model.Employee;
-import io.red.relatoriospoc.relatorios.dtos.DeclaracaoDTO;
-import io.red.relatoriospoc.repositories.EmployeeRepository;
+import io.red.relatoriospoc.relatorios.repositories.EmployeeRepository;
 import io.red.relatoriospoc.utils.ReportImageUtil;
 import jakarta.servlet.http.HttpServletResponse;
 import net.sf.jasperreports.engine.JasperExportManager;
@@ -13,7 +12,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.io.File;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
